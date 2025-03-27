@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Alternate Time's</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Sora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="music-animation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p>Loading amazing music experiences...</p>
+    </div>
+
+    <div id="content" class="hidden">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">The Alternate Time's</a>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html" class="active">About Us</a>
+                    <a href="services.html">Services</a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="about-section">
+                <div class="about-container">
+                    <h1>About Us</h1>
+                    <p>The Alternate Time's is a premier music production hub dedicated to transforming raw musical compositions into professionally produced songs ready for global distribution. Our team of experienced producers, sound engineers, and music industry professionals work together to bring your musical vision to life.</p>
+                </div>
+            </section>
+
+            <div class="banner">
+                <img src="assets/banner.jpg" alt="Music Production Banner">
+            </div>
+
+            <section class="vision-section">
+                <div class="vision-container">
+                    <h2>Our Vision</h2>
+                    <p>At The Alternate Time's, we envision a world where every musician has access to professional production services that can elevate their art to industry standards. We believe in democratizing music production, making it accessible to independent artists while maintaining the highest quality standards.</p>
+                    <p>Our goal is to bridge the gap between raw talent and professional presentation, helping artists reach their full potential and connect with audiences worldwide.</p>
+                </div>
+            </section>
+
+            <section class="projects-section">
+                <div class="projects-container">
+                    <h2>Our In-House Productions</h2>
+                    <div class="project-videos">
+                        <div class="project-video">
+                            <div class="video-banner">
+                                <img src="assets/project-banner1.jpg" alt="Project 1 Banner">
+                            </div>
+                            <div class="video-embed">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="project-video">
+                            <div class="video-banner">
+                                <img src="assets/project-banner2.jpg" alt="Project 2 Banner">
+                            </div>
+                            <div class="video-embed">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <div class="contact-container">
+                    <h2>Contact Information</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+91 8486630592</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>thealternatetimes69@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Guwahati, Assam</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-spotify"></i></a>
+                </div>
+                <div class="footer-logo">
+                    <img src="assets/logo.png" alt="The Alternate Time's Logo">
+                </div>
+                <div class="contact-button">
+                    <a href="#" id="contact-btn">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+
+        <div id="contact-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +91 8486630592</p>
+                    <p><i class="fas fa-envelope"></i> thealternatetimes69@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Guwahati, Assam</p>
+                </div>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
